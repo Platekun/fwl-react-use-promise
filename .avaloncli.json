@@ -1,0 +1,5 @@
+{
+  "artifact": "library",
+  "artifactName": "fwl-react-use-promise",
+  "cicd": "github-actions"
+}

@@ -1,0 +1,77 @@
+/* Visit https://aka.ms/tsconfig.json to read more about this file */
+{
+  "compilerOptions": {
+    /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    /* Specify what module code is generated. */
+    "module": "commonjs",
+    /* Specify the root folder within your source files. */
+    "rootDir": "source",
+    /* Specify how TypeScript looks up a file from a given module specifier. */
+    "moduleResolution": "node",
+    /* Specify type package names to be included without being referenced in a source file. */
+    "types": [
+      "node",
+      "jest"
+    ],
+    /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
+    "declaration": true,
+    "jsx": "react",
+    /* Specify an output folder for all emitted files. */
+    "outDir": "dist",
+    /* Disable emitting comments. */
+    "removeComments": true,
+    /* Allow importing helper functions from tslib once per project, instead of including them per-file. */
+    "importHelpers": true,
+    /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */
+    "esModuleInterop": true,
+    /* Ensure that casing is correct in imports. */
+    "forceConsistentCasingInFileNames": true,
+    /* Enable all strict type-checking options. */
+    "strict": true,
+    /* Enable error reporting for expressions and declarations with an implied `any` type.. */
+    "noImplicitAny": true,
+    /* When type checking, take into account `null` and `undefined`. */
+    "strictNullChecks": true,
+    /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */
+    "strictFunctionTypes": true,
+    /* Check that the arguments for `bind`, `call`, and `apply` methods match the original function. */
+    "strictBindCallApply": true,
+    /* Check for class properties that are declared but not set in the constructor. */
+    "strictPropertyInitialization": true,
+    /* Enable error reporting when `this` is given the type `any`. */
+    "noImplicitThis": true,
+    /* Type catch clause variables as 'unknown' instead of 'any'. */
+    "useUnknownInCatchVariables": true,
+    /* Ensure 'use strict' is always emitted. */
+    "alwaysStrict": true,
+    /* Enable error reporting when a local variables aren't read. */
+    "noUnusedLocals": true,
+    /* Raise an error when a function parameter isn't read */
+    "noUnusedParameters": true,
+    /* Interpret optional property types as written, rather than adding 'undefined'. */
+    "exactOptionalPropertyTypes": true,
+    /* Enable error reporting for codepaths that do not explicitly return in a function. */
+    "noImplicitReturns": true,
+    /* Enable error reporting for fallthrough cases in switch statements. */
+    "noFallthroughCasesInSwitch": true,
+    /* Include 'undefined' in index signature results */
+    "noUncheckedIndexedAccess": true,
+    /* Ensure overriding members in derived classes are marked with an override modifier. */
+    "noImplicitOverride": true,
+    /* Enforces using indexed accessors for keys declared using an indexed type */
+    "noPropertyAccessFromIndexSignature": true,
+    /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "./dist/**/*",
+    "./coverage/**/*",
+    "./test/**/*",
+    "jest.config.js",
+    "node_modules"
+  ]
+}

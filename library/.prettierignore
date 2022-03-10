@@ -1,0 +1,8 @@
+.prettierrc.json
+jest.config.js
+LICENSE
+package.json
+package-lock.json
+tsconfig.json
+tsconfig.production.json
+node_modules

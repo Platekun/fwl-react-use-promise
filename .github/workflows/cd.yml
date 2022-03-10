@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: chmod +x ./scripts/ci.sh && ./scripts/ci.sh
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Release
+        run: chmod +x ./scripts/release.sh && ./scripts/release.sh ${{secrets.NPM_AUTH_TOKEN}}

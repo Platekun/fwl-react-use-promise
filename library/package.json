@@ -1,0 +1,30 @@
+{
+  "name": "fwl-react-use-promise",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf ./dist && tsc --version && tsc --project tsconfig.production.json",
+    "release": "npm publish --access public",
+    "format": "prettier --write .",
+    "playground": "ts-node",
+    "start:development": "tsc --watch",
+    "test": "NODE_ENV=test jest",
+    "test:watch": "NODE_ENV=test jest --watchAll"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "3.1.1",
+    "@types/jest": "27.4.0",
+    "@types/node": "12.20.40",
+    "jest": "27.4.5",
+    "prettier": "2.5.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "27.1.2",
+    "ts-node": "10.4.0",
+    "tslib": "2.3.1",
+    "typescript": "4.5.4"
+  },
+  "engines": {
+    "node": "16"
+  }
+}
